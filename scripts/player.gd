@@ -33,8 +33,8 @@ func _physics_process(delta):
 
 	# Camera
 	camera_pivot.global_position = camera_pivot.global_position.lerp(global_position, delta * 20.0)
-	camera_pivot.transform = camera_pivot.transform.interpolate_with(transform, delta * 5.0)
-	nlook_at = nlook_at.lerp(global_position + linear_velocity, delta * 5.0)
+	camera_pivot.transform = camera_pivot.transform.interpolate_with(transform, delta * 2.0)
+	nlook_at = nlook_at.lerp(global_position + linear_velocity, delta * 2.0)
 	camera_3d.look_at(nlook_at)
 	reverse_camera.look_at(nlook_at)
 	_check_camera_swtich()
