@@ -51,6 +51,8 @@ func _check_camera_swtich():
 		
 func _handle_parking_brake():
 	if Input.is_action_pressed("brake"):
+		Input.start_joy_vibration(0,1,1,0)
 		set_brake(50)
 	elif get_brake() == 50:
+		Input.stop_joy_vibration(0)
 		set_brake(0)
