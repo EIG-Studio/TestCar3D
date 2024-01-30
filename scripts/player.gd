@@ -29,7 +29,7 @@ func _physics_process(delta):
 	elif Input.is_action_pressed("quit"):
 		get_tree().quit()
 	else:
-		steering = move_toward(steering, Input.get_axis("right", "left") * MAX_STEER, delta * 5.0)
+		steering = move_toward(steering, Input.get_axis("right", "left") * MAX_STEER, delta * 1)
 		engine_force = Input.get_axis("down", "up") * ENGINE_POWER
 		speed = int(linear_velocity.length())
 		speed_counter.text = str(speed)
