@@ -8,6 +8,7 @@ var parking_brake = false
 @onready var camera_pivot = $CameraPivot
 @onready var camera_3d = $CameraPivot/Camera3D
 @onready var reverse_camera = $CameraPivot/ReverseCamera
+@onready var top_camera = $CameraPivot/Camera3D/SubViewportContainer/SubViewport/TopCamera
 @onready var speed_counter = $SpeedText/SpeedCounter
 
 var nlook_at
@@ -37,6 +38,7 @@ func _physics_process(delta):
 
 func _handle_camera(delta):
 	camera_pivot.global_position = camera_pivot.global_position.lerp(global_position, delta * 20.0)
+	top_camera.global_position = global_position + Vector3(0, 100, 0)
 	camera_pivot.transform = camera_pivot.transform.interpolate_with(transform, delta * 2.0)
 	nlook_at = nlook_at.lerp(global_position + linear_velocity, delta * 2.0)
 	camera_3d.look_at(nlook_at)
