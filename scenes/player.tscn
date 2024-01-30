@@ -182,8 +182,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 1.245, 5.475)
 use_as_steering = true
 wheel_roll_influence = 0.01
 wheel_radius = 1.3
-wheel_friction_slip = 2.0
+wheel_rest_length = 0.3
+wheel_friction_slip = 1.5
 suspension_stiffness = 120.0
+damping_compression = 2.0
+damping_relaxation = 2.0
 
 [node name="Wheel2" type="MeshInstance3D" parent="FrontLeftWheel"]
 transform = Transform3D(7.18863e-07, -1.25801e-06, 6.03026, -6.03026, -1.24077e-22, 7.18863e-07, -1.7139e-13, -6.03026, -1.43773e-06, -0.951744, -0.00137997, -0.000714779)
@@ -195,8 +198,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1.245, 5.475)
 use_as_steering = true
 wheel_roll_influence = 0.01
 wheel_radius = 1.3
-wheel_friction_slip = 2.0
+wheel_rest_length = 0.3
+wheel_friction_slip = 1.5
 suspension_stiffness = 120.0
+damping_compression = 2.0
+damping_relaxation = 2.0
 
 [node name="Wheel" type="MeshInstance3D" parent="FrontRightWheel"]
 transform = Transform3D(-1.32833e-21, 0.000109996, -131.504, -131.504, 1.32349e-21, 1.32833e-21, 1.32349e-21, 131.504, 0.000113915, 0.891459, -0.00137925, -0.00350857)
@@ -208,8 +214,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 3.38813e-21, 0, 0, 1, 3.5, 1.145, -5.05)
 use_as_traction = true
 wheel_roll_influence = 0.01
 wheel_radius = 1.3
-wheel_friction_slip = 1.5
+wheel_rest_length = 0.3
+wheel_friction_slip = 1.4
+suspension_travel = 0.1
 suspension_stiffness = 100.0
+damping_compression = 2.0
+damping_relaxation = 2.0
 
 [node name="Wheel2" type="MeshInstance3D" parent="BackLeftWheel"]
 transform = Transform3D(7.18863e-07, -1.25801e-06, 6.03026, -6.03026, 2.03072e-20, 7.18863e-07, -1.7139e-13, -6.03026, -1.43773e-06, -0.887736, -0.00161839, 0.0118942)
@@ -221,8 +231,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 6.77626e-21, 0, 0, 1, -3.5, 1.145, -5.05)
 use_as_traction = true
 wheel_roll_influence = 0.01
 wheel_radius = 1.3
-wheel_friction_slip = 1.5
+wheel_rest_length = 0.3
+wheel_friction_slip = 1.4
+suspension_travel = 0.1
 suspension_stiffness = 100.0
+damping_compression = 2.0
+damping_relaxation = 2.0
 
 [node name="Wheel" type="MeshInstance3D" parent="BackRightWheel"]
 transform = Transform3D(-4.99928e-23, 5.044e-06, -6.03026, -6.03026, -4.07385e-20, 4.99575e-23, 1.24077e-22, 6.03026, 5.22372e-06, 1.37149, -0.00161803, 0.00910044)
