@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cxdld1mul32ry"]
+[gd_scene load_steps=23 format=3 uid="uid://cxdld1mul32ry"]
 
 [ext_resource type="Texture2D" uid="uid://dhjim51kgvyha" path="res://assets/pebbled_asphalt_albedo.png" id="1_d4ffj"]
 [ext_resource type="PackedScene" uid="uid://cgyky2qj35idh" path="res://scenes/player.tscn" id="3_is3gj"]
@@ -50,6 +50,40 @@ data = PackedVector3Array(0, 7.5, 10, 0.9802, 7.5, 9.9518, 0, 4.5, 10, 0.9802, 7
 [sub_resource type="PrismMesh" id="PrismMesh_tgx7n"]
 left_to_right = 2.0
 size = Vector3(20, 15, 15)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_epv6b"]
+bounce = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_edlhe"]
+albedo_color = Color(0.976471, 0.168627, 0.164706, 1)
+metallic = 0.63
+roughness = 0.1
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_tdwn3"]
+material = SubResource("StandardMaterial3D_edlhe")
+radius = 1.0
+height = 4.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nto33"]
+points = PackedVector3Array(-0.25041, -1.06559, -0.961001, 0.0455663, 0.952141, 0.997768, 0.339426, 1.11829, 0.928346, 0.462089, -1.60714, 0.640893, 0.814783, 1.30203, -0.487023, -0.965635, 1.18975, 0.164435, -0.725713, -1.36458, 0.579376, 0.93809, -1.30906, -0.132543, -0.254891, 1.68542, -0.676214, -0.786851, -1.36785, -0.489421, 0.876492, 1.24659, 0.401691, 0.1683, 1.95497, 0.229596, -0.13641, -1.95298, -0.25855, 0.401111, -1.12629, -0.902936, -0.371062, 1.19093, -0.906971, -0.546702, 1.18449, 0.815474, -0.013873, -0.953646, 0.999321, 0.75168, -1.17729, 0.633943, 0.223164, 1.12615, -0.962382, -0.834529, 1.05577, -0.541012, -0.969147, -1.19401, -0.133028, -0.559494, 1.81712, 0.106672, -0.50041, -1.76148, 0.41065, 0.527294, -1.80554, -0.254789, 0.58675, 1.7431, -0.3144, 0.746805, -1.05261, -0.656476, 0.999325, 0.953283, -0.0137771, 0.106212, 1.75002, 0.649411, -0.309093, -1.18174, 0.931782, -0.194551, -1.56465, -0.796341, -0.7753, -0.996346, 0.631302, -0.601378, -1.17603, -0.777827)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_y6qkd"]
+points = PackedVector3Array(-0.25041, -1.06559, -0.961001, 0.0455663, 0.952141, 0.997768, 0.339426, 1.11829, 0.928346, 0.462089, -1.60714, 0.640893, 0.814783, 1.30203, -0.487023, -0.965635, 1.18975, 0.164435, -0.725713, -1.36458, 0.579376, 0.93809, -1.30906, -0.132543, -0.254891, 1.68542, -0.676214, -0.786851, -1.36785, -0.489421, 0.876492, 1.24659, 0.401691, 0.1683, 1.95497, 0.229596, -0.13641, -1.95298, -0.25855, 0.401111, -1.12629, -0.902936, -0.371062, 1.19093, -0.906971, -0.546702, 1.18449, 0.815474, -0.013873, -0.953646, 0.999321, 0.75168, -1.17729, 0.633943, 0.223164, 1.12615, -0.962382, -0.834529, 1.05577, -0.541012, -0.969147, -1.19401, -0.133028, -0.559494, 1.81712, 0.106672, -0.50041, -1.76148, 0.41065, 0.527294, -1.80554, -0.254789, 0.58675, 1.7431, -0.3144, 0.746805, -1.05261, -0.656476, 0.999325, 0.953283, -0.0137771, 0.106212, 1.75002, 0.649411, -0.309093, -1.18174, 0.931782, -0.194551, -1.56465, -0.796341, -0.7753, -0.996346, 0.631302, -0.601378, -1.17603, -0.777827)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xywbm"]
+points = PackedVector3Array(-0.25041, -1.06559, -0.961001, 0.0455663, 0.952141, 0.997768, 0.339426, 1.11829, 0.928346, 0.462089, -1.60714, 0.640893, 0.814783, 1.30203, -0.487023, -0.965635, 1.18975, 0.164435, -0.725713, -1.36458, 0.579376, 0.93809, -1.30906, -0.132543, -0.254891, 1.68542, -0.676214, -0.786851, -1.36785, -0.489421, 0.876492, 1.24659, 0.401691, 0.1683, 1.95497, 0.229596, -0.13641, -1.95298, -0.25855, 0.401111, -1.12629, -0.902936, -0.371062, 1.19093, -0.906971, -0.546702, 1.18449, 0.815474, -0.013873, -0.953646, 0.999321, 0.75168, -1.17729, 0.633943, 0.223164, 1.12615, -0.962382, -0.834529, 1.05577, -0.541012, -0.969147, -1.19401, -0.133028, -0.559494, 1.81712, 0.106672, -0.50041, -1.76148, 0.41065, 0.527294, -1.80554, -0.254789, 0.58675, 1.7431, -0.3144, 0.746805, -1.05261, -0.656476, 0.999325, 0.953283, -0.0137771, 0.106212, 1.75002, 0.649411, -0.309093, -1.18174, 0.931782, -0.194551, -1.56465, -0.796341, -0.7753, -0.996346, 0.631302, -0.601378, -1.17603, -0.777827)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_snh01"]
+points = PackedVector3Array(-0.25041, -1.06559, -0.961001, 0.0455663, 0.952141, 0.997768, 0.339426, 1.11829, 0.928346, 0.462089, -1.60714, 0.640893, 0.814783, 1.30203, -0.487023, -0.965635, 1.18975, 0.164435, -0.725713, -1.36458, 0.579376, 0.93809, -1.30906, -0.132543, -0.254891, 1.68542, -0.676214, -0.786851, -1.36785, -0.489421, 0.876492, 1.24659, 0.401691, 0.1683, 1.95497, 0.229596, -0.13641, -1.95298, -0.25855, 0.401111, -1.12629, -0.902936, -0.371062, 1.19093, -0.906971, -0.546702, 1.18449, 0.815474, -0.013873, -0.953646, 0.999321, 0.75168, -1.17729, 0.633943, 0.223164, 1.12615, -0.962382, -0.834529, 1.05577, -0.541012, -0.969147, -1.19401, -0.133028, -0.559494, 1.81712, 0.106672, -0.50041, -1.76148, 0.41065, 0.527294, -1.80554, -0.254789, 0.58675, 1.7431, -0.3144, 0.746805, -1.05261, -0.656476, 0.999325, 0.953283, -0.0137771, 0.106212, 1.75002, 0.649411, -0.309093, -1.18174, 0.931782, -0.194551, -1.56465, -0.796341, -0.7753, -0.996346, 0.631302, -0.601378, -1.17603, -0.777827)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4kife"]
+size = Vector3(2, 2, 8)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_itlq5"]
+points = PackedVector3Array(-1, -1, -3.82446, 1, 1, 3.70495, 1, -0.968254, 3.70495, -1, -1, 3.82446, -0.968254, 1, 3.70495, 1, 1, -3.70495, 1, -0.968254, -3.70495, -0.968254, 1, -3.70495)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a56mk"]
+size = Vector3(2, 2, 9)
 
 [node name="World" type="Node3D"]
 
@@ -468,3 +502,153 @@ skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BumpRoad/BumpMesh25/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_cpjwy")
+
+[node name="BowlingPins" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 2, 640)
+
+[node name="BowlingPin" type="RigidBody3D" parent="BowlingPins"]
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin"]
+shape = SubResource("ConvexPolygonShape3D_nto33")
+
+[node name="BowlingPin2" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 0)
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin2"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin2"]
+shape = SubResource("ConvexPolygonShape3D_y6qkd")
+
+[node name="BowlingPin3" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin3"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin3"]
+shape = SubResource("ConvexPolygonShape3D_xywbm")
+
+[node name="BowlingPin4" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 0)
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin4"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin4"]
+shape = SubResource("ConvexPolygonShape3D_snh01")
+
+[node name="BowlingPin5" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin5"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin5"]
+shape = SubResource("ConvexPolygonShape3D_nto33")
+
+[node name="BowlingPin6" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 2)
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin6"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin6"]
+shape = SubResource("ConvexPolygonShape3D_y6qkd")
+
+[node name="BowlingPin7" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin7"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin7"]
+shape = SubResource("ConvexPolygonShape3D_xywbm")
+
+[node name="BowlingPin8" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 2)
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin8"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin8"]
+shape = SubResource("ConvexPolygonShape3D_snh01")
+
+[node name="BowlingPin9" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin9"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin9"]
+shape = SubResource("ConvexPolygonShape3D_nto33")
+
+[node name="BowlingPin10" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 4)
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin10"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin10"]
+shape = SubResource("ConvexPolygonShape3D_y6qkd")
+
+[node name="BowlingPin11" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 4)
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin11"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin11"]
+shape = SubResource("ConvexPolygonShape3D_xywbm")
+
+[node name="BowlingPin12" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 4)
+physics_material_override = SubResource("PhysicsMaterial_epv6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/BowlingPin12"]
+mesh = SubResource("CapsuleMesh_tdwn3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/BowlingPin12"]
+shape = SubResource("ConvexPolygonShape3D_snh01")
+
+[node name="SquareBlock" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, -1, 3.05273)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/SquareBlock"]
+mesh = SubResource("BoxMesh_4kife")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/SquareBlock"]
+shape = SubResource("ConvexPolygonShape3D_itlq5")
+
+[node name="SquareBlock2" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.64973, -1, 3.05273)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/SquareBlock2"]
+mesh = SubResource("BoxMesh_4kife")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/SquareBlock2"]
+shape = SubResource("ConvexPolygonShape3D_itlq5")
+
+[node name="SquareBlock3" type="RigidBody3D" parent="BowlingPins"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.55, -1, 6.1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BowlingPins/SquareBlock3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.145363)
+mesh = SubResource("BoxMesh_a56mk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BowlingPins/SquareBlock3"]
+shape = SubResource("ConvexPolygonShape3D_itlq5")
