@@ -258,7 +258,6 @@ top_level = true
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 transform = Transform3D(-1, 2.62201e-08, -1.48702e-07, 0, 0.984808, 0.173648, 1.50996e-07, 0.173648, -0.984808, 0.5, 7.065, -14.989)
-current = true
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="CameraPivot/Camera3D"]
 anchors_preset = 1
@@ -268,6 +267,7 @@ offset_left = -128.0
 offset_bottom = 128.0
 grow_horizontal = 0
 size_flags_horizontal = 4
+metadata/_edit_use_anchors_ = true
 
 [node name="SubViewport" type="SubViewport" parent="CameraPivot/Camera3D/SubViewportContainer"]
 handle_input_locally = false
@@ -281,6 +281,7 @@ transform = Transform3D(-1, 8.74228e-08, 3.82137e-15, 0, -4.37114e-08, 1, 8.7422
 
 [node name="ReverseCamera" type="Camera3D" parent="CameraPivot"]
 transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 0.5, 7.065, 15)
+current = true
 
 [node name="CenterOfMass" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 3.1)
