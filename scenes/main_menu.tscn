@@ -26,6 +26,7 @@ grow_horizontal = 2
 grow_vertical = 2
 stream = ExtResource("2_epca6")
 autoplay = true
+expand = true
 loop = true
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
