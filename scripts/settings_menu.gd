@@ -9,11 +9,12 @@ var default_resolution
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	resolution_menu.grab_focus()
 	add_items()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if back_button.button_pressed:
+	if back_button.button_pressed or Input.is_action_pressed("ui_cancel"):
 		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 
 func add_items():

@@ -63,11 +63,14 @@ grow_vertical = 2
 
 [node name="PlayButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+focus_neighbor_bottom = NodePath("../SettingsButton")
 theme_override_font_sizes/font_size = 30
 text = "Play"
 
 [node name="SettingsButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+focus_neighbor_top = NodePath("../PlayButton")
+focus_neighbor_bottom = NodePath("../Exit")
 theme_override_font_sizes/font_size = 30
 text = "Settings"
 

@@ -261,7 +261,7 @@ transform = Transform3D(-1, 2.62201e-08, -1.48702e-07, 0, 0.984808, 0.173648, 1.
 current = true
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="CameraPivot/Camera3D"]
-anchors_preset = -1
+anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -128.0
