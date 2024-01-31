@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_g321k"]
 [ext_resource type="Script" path="res://scripts/FpsCounter.gd" id="2_cr07r"]
-[ext_resource type="AudioStream" uid="uid://d0lhyyxftnkkm" path="res://assets/AmongUs.mp3" id="3_se01l"]
+[ext_resource type="AudioStream" uid="uid://d0lhyyxftnkkm" path="res://assets/sounds/AmongUs.mp3" id="3_se01l"]
 [ext_resource type="PackedScene" uid="uid://dprdp8os0vpbf" path="res://scenes/porsche_911_turbo.tscn" id="4_1nwsl"]
-[ext_resource type="Texture2D" uid="uid://7k21uh2c53j3" path="res://assets/asphalt_02_diff_2k.jpg" id="4_q56xn"]
-[ext_resource type="Texture2D" uid="uid://dfp76o0uqpu10" path="res://assets/asphalt_02_disp_2k.png" id="5_o7nc4"]
+[ext_resource type="Texture2D" uid="uid://7k21uh2c53j3" path="res://assets/ground/asphalt_02_diff_2k.jpg" id="4_q56xn"]
+[ext_resource type="Texture2D" uid="uid://dfp76o0uqpu10" path="res://assets/ground/asphalt_02_disp_2k.png" id="5_o7nc4"]
 [ext_resource type="PackedScene" uid="uid://0rgotk0smyxh" path="res://scenes/pause_menu.tscn" id="6_6a0st"]
-[ext_resource type="Texture2D" uid="uid://dv0t8crsc1eet" path="res://assets/asphalt_02_rough_2k.jpg" id="6_8w51v"]
+[ext_resource type="Texture2D" uid="uid://dv0t8crsc1eet" path="res://assets/ground/asphalt_02_rough_2k.jpg" id="6_8w51v"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_8p57f"]
 

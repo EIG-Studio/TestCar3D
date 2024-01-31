@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://cgyky2qj35idh"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_34ec2"]
-[ext_resource type="Texture2D" uid="uid://b8iwqxxak53ls" path="res://assets/Toyota AE86_Palette.png" id="1_b4yjn"]
+[ext_resource type="Texture2D" uid="uid://b8iwqxxak53ls" path="res://assets/toyota/Toyota AE86_Palette.png" id="1_b4yjn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rhqij"]
 resource_name = "Body"

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://vrhdix4ute52"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_mindf"]
-[ext_resource type="VideoStream" path="res://assets/main_menu_intro.ogv" id="2_epca6"]
+[ext_resource type="VideoStream" path="res://assets/intro/main_menu_intro.ogv" id="2_epca6"]
 
 [sub_resource type="SystemFont" id="SystemFont_6ek83"]
 font_names = PackedStringArray("Arial")
