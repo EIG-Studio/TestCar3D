@@ -8,7 +8,7 @@ font_names = PackedStringArray("Arial")
 font_italic = true
 font_weight = 700
 
-[node name="Control" type="Control"]
+[node name="main_menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -63,6 +63,7 @@ grow_vertical = 2
 
 [node name="PlayButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+focus_neighbor_top = NodePath("../Exit")
 focus_neighbor_bottom = NodePath("../SettingsButton")
 theme_override_font_sizes/font_size = 30
 text = "Play"
@@ -76,6 +77,8 @@ text = "Settings"
 
 [node name="Exit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+focus_neighbor_top = NodePath("../SettingsButton")
+focus_neighbor_bottom = NodePath("../PlayButton")
 theme_override_font_sizes/font_size = 30
 text = "Exit
 "

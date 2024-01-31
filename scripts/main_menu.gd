@@ -3,9 +3,11 @@ extends Control
 @onready var play_button = $VBoxContainer/PlayButton
 @onready var settings_button = $VBoxContainer/SettingsButton
 @onready var exit = $VBoxContainer/Exit
+@onready var globals = get_node("/root/Globals")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	globals.current_scene = "res://scenes/main_menu.tscn"
 	play_button.grab_focus()
 
 

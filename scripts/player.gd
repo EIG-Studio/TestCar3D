@@ -17,7 +17,6 @@ var speed
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	nlook_at = global_position
 	initial_transform = transform
 
@@ -27,8 +26,6 @@ func _physics_process(delta):
 	if Input.is_action_pressed("reset"):
 		global_position = Vector3.ZERO
 		global_transform = initial_transform
-	elif Input.is_action_pressed("quit"):
-		get_tree().quit()
 	else:
 		steering = move_toward(steering, Input.get_axis("right", "left") * MAX_STEER, delta * 1)
 		engine_force = Input.get_axis("down", "up") * ENGINE_POWER

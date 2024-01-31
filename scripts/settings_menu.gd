@@ -3,7 +3,7 @@ extends Control
 @onready var back_button = $Panel/BackButton
 @onready var resolution_menu = $Panel/VBoxContainer/ResolutionMenu
 @onready var fullscreen_check_box = $Panel/VBoxContainer/FullscreenCheckBox
-
+@onready var globals = get_node("/root/Globals")
 
 var default_resolution
 
@@ -13,9 +13,9 @@ func _ready():
 	add_items()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if back_button.button_pressed or Input.is_action_pressed("ui_cancel"):
-		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+		get_tree().change_scene_to_file(globals.current_scene)
 
 func add_items():
 	default_resolution = get_window().size
